@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model artifacts
+*.joblib
+*.pkl
+
+# Generated data
+data/raw/*
+!data/raw/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
