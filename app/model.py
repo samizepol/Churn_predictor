@@ -6,10 +6,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from app.features import load_training_dataset
 
-ROOT_DIR = Path(__file__).resolve().parent.parent
+APP_DIR = Path(__file__).resolve().parent
 
-# Force the model path to be in that exact folder
-MODEL_PATH = ROOT_DIR / "saved_model.joblib"
+# Look for the model directly inside the app folder
+MODEL_PATH = APP_DIR / "saved_model.joblib"
 
 def train_model():
     df = load_training_dataset()
