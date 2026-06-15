@@ -8,7 +8,11 @@ from app.features import load_training_dataset
 
 APP_DIR = Path(__file__).resolve().parent
 
+<<<<<<< HEAD
 # Look for the model directly inside the app folder
+=======
+# Force the model path to be in that exact folder
+>>>>>>> 27adece2404fd0a5591c3d762b78d3ce9c2a7011
 MODEL_PATH = APP_DIR / "saved_model.joblib"
 
 def train_model():
